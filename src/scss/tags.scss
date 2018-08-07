@@ -1,0 +1,159 @@
+@import "./_vars.scss";
+
+.score {
+    &::before {
+      position: absolute;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #5aa043;
+      color: #fff;
+      border: 1px dotted #fff;
+      line-height: 16px;
+      font-size: 10px;
+    }
+  }
+  .color3-box .score::before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $color3;
+  }
+  .color5-item {
+    &::before {
+      content: $symbol-greater;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-62%,-50%);
+      font-size: 20px;
+      line-height: 17px;
+      text-shadow: 0 0 6px white;
+      color: $color5;
+    }
+    &:first-child::before {
+      content: "";
+    }
+  }
+  .bonus-multiply {
+    &::before {
+      content: $symbol-star;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 23px;
+      color: orange;
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 10px;
+      color: black;
+    }
+  }
+  .multiply2::after {
+    content: "x2";
+  }
+  .multiply3::after {
+    content: "x3";
+  }
+.score-1::before {content: "1";}
+.score-2::before {content: "2";}
+.score-3::before {content: "3";}
+.score-4::before {content: "4";}
+.score-6::before {content: "6";}
+.score-7::before {content: "7";}
+.score-10::before {content: "10";}
+.score-11::before {content: "11";}
+.score-14::before {content: "14";}
+.score-15::before {content: "15";}
+.score-16::before {content: "16";}
+.score-20::before {content: "20";}
+.score-21::before {content: "21";}
+.score-22::before {content: "22";}
+.score-28::before {content: "28";}
+.score-29::before {content: "29";}
+.score-36::before {content: "36";}
+.score-37::before {content: "37";}
+.score-45::before {content: "45";}
+.score-46::before {content: "46";}
+.score-55::before {content: "55";}
+.score-56::before {content: "56";}
+.score-66::before {content: "66";}
+
+
+
+.bonus::after {
+    color: white;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    //bottom: 0;
+    top: 50%;
+    left: 50%;
+    //transform: translate(-50%,50%);
+    transform: translate(-50%,-50%);
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .color3-box .bonus::after,
+  .color4-box .bonus::after,
+  .color5-box .bonus::after {
+      bottom: 0;
+      top: initial;
+      left: 50%;
+      transform: translate(-50%,50%);
+  }
+  
+  .bonus-plus::after {
+    content: "+1";
+    background-color: black;
+    border: 1px solid white;
+  }
+  .bonus-x-1::after {
+    content: $symbol-x;
+    background-color: $color1;
+    border: 1px solid white;
+  }
+  .bonus-x-2::after {
+    content: $symbol-x;
+    background-color: $color2;
+    border: 1px solid white;
+  }
+  .bonus-x-3::after {
+    content: $symbol-x;
+    background-color: $color3;
+    border: 1px solid white;
+  }
+  .bonus-6-5::after {
+    content: "6";
+    background-color: $color5;
+    border: 1px solid white;
+  }
+  .bonus-6-4::after {
+    content: "6";
+    background-color: $color4;
+    border: 1px solid white;
+  }
+  .bonus-4-4::after {
+    content: "4";
+    background-color: $color4;
+    border: 1px solid white;
+  }
+  .bonus-re::after {
+    content: $symbol-re;
+    background-color: black;
+    border: 1px solid white;
+  }
+  .bonus-fox::after {
+    content: $symbol-fox;
+    font-size: 16px;
+  }
