@@ -1,11 +1,111 @@
 <% var data = {
-  title: "Ganz Schoen Clever",
+  title: "🦊 Ganz Schön Clever",
   author: "eromanenko"
 }; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+⥀♥★✹🎲 ⚀ ⚁ ⚂ ⚃ ⚄ ⚅🦊♻✓☻
 <div class="container">
+  <div class="sheet-bg"></div>
   <div class="sheet">
-    
+    <div class="header">
+      <div class="rounds">
+        <div class="round round1">
+          <div class="round-number">1</div>
+          <div class="round-footer"><span>⥀</span></div>
+        </div>
+        <div class="round round2">
+            <div class="round-number">2</div>
+            <div class="round-footer"><span>+1</span></div>
+        </div>
+        <div class="round round3">
+            <div class="round-number">3</div>
+            <div class="round-footer"><span>⥀</span></div>
+        </div>
+        <div class="round round4">
+            <div class="round-number">4</div>
+            <div class="round-footer"><span>X</span>|<span>6</span></div>
+        </div>
+        <div class="round round5">
+            <div class="round-number">5</div>
+            <div class="round-footer">☻☻☻</div>
+        </div>
+        <div class="round round6">
+            <div class="round-number">6</div>
+            <div class="round-footer">☻|☻☻</div>
+        </div>
+      </div>
+      <div class="reroll-counter">
+        <div class="reroll-counter_icon">⥀</div>
+        <div class="reroll-counter_item"></div>
+        <div class="reroll-counter_item"></div>
+        <div class="reroll-counter_item"></div>
+        <div class="reroll-counter_item"></div>
+        <div class="reroll-counter_item"></div>
+        <div class="reroll-counter_item"></div>
+        <div class="reroll-counter_item"></div>
+      </div>
+      <div class="plus-counter">
+        <div class="plus-counter_icon">+1</div>
+        <div class="plus-counter_item"></div>
+        <div class="plus-counter_item"></div>
+        <div class="plus-counter_item"></div>
+        <div class="plus-counter_item"></div>
+        <div class="plus-counter_item"></div>
+        <div class="plus-counter_item"></div>
+        <div class="plus-counter_item"></div>
+      </div>
+    </div>
+    <div class="color1-box">1</div>
+    <div class="color2-box">2</div>
+    <div class="color3-box left-arrow">
+      <span class="color3-item color3-1">≥1</span>
+      <span class="color3-item color3-2">≥2</span>
+      <span class="color3-item color3-3">≥3</span>
+      <span class="color3-item color3-4 bonus bonus-plus">≥4</span>
+      <span class="color3-item color3-5">≥5</span>
+      <span class="color3-item color3-6 bonus bonus-x-2">≥1</span>
+      <span class="color3-item color3-7 bonus bonus-fox">≥2</span>
+      <span class="color3-item color3-8">≥3</span>
+      <span class="color3-item color3-9 bonus bonus-6-5">≥4</span>
+      <span class="color3-item color3-10 bonus bonus-re">≥5</span>
+      <span class="color3-item color3-11">≥6</span>
+    </div>
+    <div class="color4-box left-arrow">
+        <span class="color4-item color4-1"></span>
+        <span class="color4-item color4-2"></span>
+        <span class="color4-item color4-3 bonus bonus-re"></span>
+        <span class="color4-item color4-4 bonus-multiply multiply2"></span>
+        <span class="color4-item color4-5 bonus bonus-x-1"></span>
+        <span class="color4-item color4-6 bonus bonus-plus"></span>
+        <span class="color4-item color4-7 bonus-multiply multiply2"></span>
+        <span class="color4-item color4-8 bonus bonus-fox"></span>
+        <span class="color4-item color4-9 bonus-multiply multiply2"></span>
+        <span class="color4-item color4-10 bonus bonus-6-5"></span>
+        <span class="color4-item color4-11 bonus-multiply multiply3"></span>
+    </div>
+    <div class="color5-box left-arrow">
+        <span class="color5-item color5-1"></span>
+        <span class="color5-item color5-2"></span>
+        <span class="color5-item color5-3 bonus bonus-re"></span>
+        <span class="color5-item color5-4 bonus bonus-x-2"></span>
+        <span class="color5-item color5-5 bonus bonus-plus"></span>
+        <span class="color5-item color5-6 bonus bonus-x-1"></span>
+        <span class="color5-item color5-7 bonus bonus-fox"></span>
+        <span class="color5-item color5-8 bonus bonus-re"></span>
+        <span class="color5-item color5-9 bonus bonus-x-3"></span>
+        <span class="color5-item color5-10 bonus bonus-6-4"></span>
+        <span class="color5-item color5-11 bonus bonus-plus"></span>
+    </div>
+    <div class="results">
+      <span class="result result1"></span>
+      <span class="result result2"></span>
+      <span class="result result3"></span>
+      <span class="result result4"></span>
+      <span class="result result5"></span>
+      <span class="result result-fox"></span>
+      <span class="result result-sum"></span>
+    </div>
   </div>
-  Первая страница.
-  ⥀♥★✹🎲 ⚀ ⚁ ⚂ ⚃ ⚄ ⚅🦊♻
 </div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
