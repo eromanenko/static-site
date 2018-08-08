@@ -1,6 +1,7 @@
 @import "./_vars.scss";
 
 .score {
+  position: relative;
     &::before {
       position: absolute;
       border-radius: 50%;
@@ -9,11 +10,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
-      background-color: #5aa043;
-      color: #fff;
       border: 1px dotted #fff;
       line-height: 16px;
       font-size: 10px;
+      text-align: center;
+      box-sizing: border-box;
     }
   }
   .color3-box .score::before {
@@ -21,6 +22,18 @@
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: $color3;
+    color: #fff;
+  }
+  .color1-box .score::before {
+    background-color: $color1;
+    color: #000;
+  }
+  .color2-box .score::before {
+    background-color: $color2;
+    color: #fff;
+    width: 14px;
+    height: 14px;
+    line-height: 12px;
   }
   .color5-item {
     &::before {
@@ -145,6 +158,11 @@
   }
   .bonus-4-4::after {
     content: "4";
+    background-color: $color4;
+    border: 1px solid white;
+  }
+  .bonus-5-4::after {
+    content: "5";
     background-color: $color4;
     border: 1px solid white;
   }
